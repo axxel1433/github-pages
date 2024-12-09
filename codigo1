@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gana una Cena!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .option {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+        .option:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+        .message {
+            display: none;
+            margin-top: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745;
+            background: #fdfd96;
+            border: 2px dashed #ffc107;
+            padding: 20px;
+            border-radius: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <script>
+        function showMessage() {
+            const message = document.getElementById('congratulations');
+            message.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>¡Participa y gana una cena para 2 personas!</h1>
+    </header>
+    <main>
+        <div class="options">
+            <div class="option" onclick="showMessage()">Foster's Hollywood</div>
+            <div class="option" onclick="showMessage()">Vips</div>
+            <div class="option" onclick="showMessage()">La Lola</div>
+            <div class="option" onclick="showMessage()">La Burguesa</div>
+        </div>
+        <div id="congratulations" class="message">
+            🎉 ¡Felicidades has ganado una cena para 2 personas! 🎉<br>
+            Canjeable SOLO en el 2024. <br>
+            <strong>¡Corre, no te quedes sin tu cena!</strong>
+        </div>
+    </main>
+</body>
+</html>
+
+    
+</body>
+</html>
